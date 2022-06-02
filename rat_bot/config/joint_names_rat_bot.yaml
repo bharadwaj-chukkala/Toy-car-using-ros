@@ -1,0 +1,24 @@
+controller_joint_names: ['', 'rear_axle_continuous', 'front_right_axle_revolute', 'front_right_wheel_continuous', 'front_left_axle_revolute', 'front_left_wheel_continuous', ]
+rat_bot:
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  rear_axle_continuous_controller:
+    type: velocity_controllers/JointVelocityController 
+    joint: "rear_axle_continuous"
+    pid : {p: 100.0, i: 0.01, d: 10.0} 
+
+  # Controller 2s
+  front_right_axle_revolute_controller:
+    type: effort_controllers/JointPositionController 
+    joint: "front_right_axle_revolute"
+    pid : {p: 100.0, i: 0.01, d: 10.0}
+  
+  #Controller 3
+  front_left_axle_revolute_controller:
+    type: effort_controllers/JointPositionController 
+    joint: "front_left_axle_revolute"
+    pid : {p: 100.0, i: 0.01, d: 10.0}
