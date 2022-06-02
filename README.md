@@ -1,4 +1,4 @@
-# Toy-car-using-ros
+# Toy-car-simulation-using-ros
 
 ## ENPM662 Intro to Robot Modeling Project 1
 
