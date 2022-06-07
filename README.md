@@ -1,10 +1,11 @@
-# Toy-car-simulation-using-ros
+# Toy-car-simulation-using-ROS
 
 ## ENPM662 Intro to Robot Modeling Project 1
 
 |Team Members
 |--
 |Bharadwaj Chukkala
+|Madhu Narra Chittibabu
 
 ## Contents
 1. Assembly
